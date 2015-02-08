@@ -28,11 +28,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go To Browser Activity"
-        android:id="@+id/button"
+        android:id="@+id/buttonBrowser"
+        android:onCLick="onClickBrowser"
+        android:layout_below="@+id/buttonImage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Image Pick Activity"
+        android:id="@+id/buttonImage"
+        android:onCLick="onClickImagePick"
         android:layout_below="@+id/startintent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="67dp"
-        android:onCLick="onClickBrowser"/>
+        android:layout_marginTop="70dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Implicit Intent Activity"
+        android:id="@+id/buttonImplicit"
+        android:onCLick="onClickImplicit"
+        android:layout_below="@+id/buttonBrowser"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

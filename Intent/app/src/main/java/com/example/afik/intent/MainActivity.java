@@ -30,6 +30,16 @@ public class MainActivity extends Activity {
         startActivity(i);
     }
 
+    public void onClickImagePick(View view) {
+        Intent i = new Intent(this, ImageActivity.class);
+        startActivity(i);
+    }
+
+    public void onClickImplicit(View view) {
+        Intent i = new Intent(this, ImageActivity.class);
+        startActivity(i);
+    }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode == RESULT_OK && requestCode ==REQUEST_CODE) {
