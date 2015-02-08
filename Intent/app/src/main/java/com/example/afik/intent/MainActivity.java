@@ -16,12 +16,18 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(View view) {
+
+    public void onClickResult(View view) {
         EditText text = (EditText) findViewById(R.id.inputforintent);
         String value = text.getText().toString();
         Intent i = new Intent(this, ResultActivity.class);
         i.putExtra("valueSend", value);
         startActivityForResult(i, REQUEST_CODE);
+    }
+
+    public void onClickBrowser(View view) {
+        Intent i = new Intent(this, BrowserActivity.class);
+        startActivity(i);
     }
 
     @Override

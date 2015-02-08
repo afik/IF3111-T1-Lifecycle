@@ -21,7 +21,18 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/inputforintent"
         android:layout_below="@+id/inputforintent"
-        android:onClick="onClick"
-        android:text="Calling an intent" />
+        android:onClick="onClickResult"
+        android:text="Try Result Intent" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Browser Activity"
+        android:id="@+id/button"
+        android:layout_below="@+id/startintent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="67dp"
+        android:onCLick="onClickBrowser"/>
 
 </RelativeLayout>
