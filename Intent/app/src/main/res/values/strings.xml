@@ -8,5 +8,6 @@
     <string name="title_activity_result">ResultActivity</string>
     <string name="title_activity_browser">BrowserActivity</string>
     <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_implicit">ImplicitActivity</string>
 
 </resources>
