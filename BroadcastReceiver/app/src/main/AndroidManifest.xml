@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.afik.broadcastreceiver" >
 
-    <uses-permission android:name="android.permission.READ_PHONE_STATE">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE" >
+    </uses-permission>
 
     <application
         android:allowBackup="true"
@@ -24,6 +26,9 @@
                 <action android:name="android.intent.action.PHONE_STATE" >
                 </action>
             </intent-filter>
+        </receiver>
+
+        <receiver android:name="MyBroadcastReceiver" >
         </receiver>
 
     </application>
